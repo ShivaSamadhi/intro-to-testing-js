@@ -111,6 +111,7 @@ describe('isEven', function () {
     });
 })
 
+
 describe('isVowel', function () {
     it('should be a defined function', function () {
       expect(typeof isVowel).toBe('function')
@@ -123,5 +124,19 @@ describe('isVowel', function () {
     });
     it('should return false for any input that is not a vowel', function () {
       expect(isVowel(4)).toBe(false)
+    });
+})
+describe('add', function () {
+    it('should be a defined function', function () {
+      expect(typeof add).toBe('function')
+    });
+    it('should return a number', function () {
+      expect(typeof add()).toBe('number')
+    });
+    it('should add numbers or numeric strings to produce the proper sum', function () {
+      expect(add(5, '3')).toBe(8)
+    });
+    it('should return NaN for any input that is not a number', function () {
+      expect(add(2, "dog")).toBeNaN()
     });
 })

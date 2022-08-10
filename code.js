@@ -34,3 +34,11 @@ let isVowel = function (input) {
     }
 }
 console.log(isVowel("banana"))
+
+let add = function (num1, num2) {
+    if (isNaN(num1) === false && isNaN(num2) === false){
+        return parseInt(num1) + parseInt(num2)
+    }
+    return NaN
+}
+console.log(add("yeet", 'sheesh'))
