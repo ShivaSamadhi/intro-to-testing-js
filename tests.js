@@ -110,3 +110,18 @@ describe('isEven', function () {
         expect(isEven()).toBe(false)
     });
 })
+
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+      expect(typeof isVowel).toBe('function')
+    });
+    it('should return a boolean for any input', function () {
+      expect(typeof isVowel()).toBe('boolean')
+    });
+    it('should return true for any vowel regardless of case', function () {
+      expect(isVowel('A')).toBe(true)
+    });
+    it('should return false for any input that is not a vowel', function () {
+      expect(isVowel(4)).toBe(false)
+    });
+})
